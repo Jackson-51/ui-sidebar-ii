@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span><i class="fa-solid fa-bitcoin-sign"></i></span>
+            <h3>Bitcoin</h3>
+        </header>
+        <div class="items-container">
+            <div class="item">
+                <i class="ai-grid"></i>
+                <p>Dashboard</p>
+            </div>
+            <div class="item_x" onclick="slider(1)">
+                <span><i class="ai-gear"></i><p>Settings</p></span>
+                <i class="fa-solid fa-angle-down" id="icon_1"></i>
+            </div>
+            <ul id="one">
+                <li>Display</li>
+                <li>Appearance</li>
+                <li>Preference</li>
+            </ul>
+            <div class="item_x" onclick="slider(2)">
+                <span><i class="ai-folder-add"></i><p>Create</p></span>
+                <i class="fa-solid fa-angle-down" id="icon_2"></i>
+            </div>
+            <ul id="two">
+                <li>Article</li>
+                <li>Documents</li>
+                <li>Video</li>
+                <li>Presentation</li>
+            </ul>
+            <div class="item_x" onclick="slider(3)">
+                <span><i class="fa-regular fa-user"></i><p>Profile</p></span>
+                <i class="fa-solid fa-angle-down" id="icon_3"></i>
+            </div>
+            <ul id="three">
+                <li>Theme</li>
+                <li>Avater</li>
+            </ul>
+            <div class="item">
+                <i class="fa-regular fa-bell"></i>
+                <p>Notification</p>
+            </div>
+            <div class="item">
+                <i class="ai-cart"></i>
+                <p>Product</p>
+            </div>
+            <div class="item">
+                <i class="ai-grid"></i>
+                <p>Account</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
